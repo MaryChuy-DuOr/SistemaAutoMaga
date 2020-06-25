@@ -8,6 +8,7 @@ import { EncargadoTallerComponent } from './encargadoTaller/encargado-taller/enc
 import { EncargadoAccesoComponent } from './encargadoAcceso/encargado-acceso/encargado-acceso.component';
 import { EncargadoFacturacionComponent } from './encargadoFacturacion/encargado-facturacion/encargado-facturacion.component';
 import { AdministradorComponent } from './administrador/administrador/administrador.component';
+import { UnidadesDisponiblesComponent } from './vendedor/unidades-disponibles/unidades-disponibles.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'encargado-taller', component: EncargadoTallerComponent},
   {path: 'supervisor-taller', component: SupervisorTallerComponent},
   {path: 'cuadrilla-mecanicos', component: CuadrillaMecanicosComponent},
+  {path: 'unidades-disponibles', component: UnidadesDisponiblesComponent},
   {path: '', pathMatch: 'full', redirectTo: 'login'},
   {path: '**', pathMatch: 'full', redirectTo: 'login'}
 ];

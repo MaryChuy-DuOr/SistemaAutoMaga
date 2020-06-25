@@ -20,6 +20,7 @@ import { SupervisorTallerComponent } from './supervisorTaller/supervisor-taller/
 import { NavSupervisorTallerComponent } from './supervisorTaller/nav-supervisor-taller/nav-supervisor-taller.component';
 import { NavCuadrillaMecanicosComponent } from './cuadrillaMecanicos/nav-cuadrilla-mecanicos/nav-cuadrilla-mecanicos.component';
 import { CuadrillaMecanicosComponent } from './cuadrillaMecanicos/cuadrilla-mecanicos/cuadrilla-mecanicos.component';
+import { UnidadesDisponiblesComponent } from './vendedor/unidades-disponibles/unidades-disponibles.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { CuadrillaMecanicosComponent } from './cuadrillaMecanicos/cuadrilla-meca
     SupervisorTallerComponent,
     NavSupervisorTallerComponent,
     NavCuadrillaMecanicosComponent,
-    CuadrillaMecanicosComponent
+    CuadrillaMecanicosComponent,
+    UnidadesDisponiblesComponent
   ],
   imports: [
     BrowserModule,
