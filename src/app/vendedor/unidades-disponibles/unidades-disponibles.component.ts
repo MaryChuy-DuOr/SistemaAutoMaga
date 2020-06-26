@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UnidadesDisponiblesComponent implements OnInit {
 
+  bandera: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  mostrarTabla() {
+    this.bandera = true;
+  }
 }

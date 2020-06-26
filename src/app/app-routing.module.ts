@@ -9,7 +9,12 @@ import { EncargadoAccesoComponent } from './encargadoAcceso/encargado-acceso/enc
 import { EncargadoFacturacionComponent } from './encargadoFacturacion/encargado-facturacion/encargado-facturacion.component';
 import { AdministradorComponent } from './administrador/administrador/administrador.component';
 import { UnidadesDisponiblesComponent } from './vendedor/unidades-disponibles/unidades-disponibles.component';
-
+import { ServicioComponent } from './vendedor/servicio/servicio.component';
+import { ClientesComponent } from './vendedor/clientes/clientes.component';
+import { CotizacionComponent } from './vendedor/cotizacion/cotizacion.component';
+import { ContratoComponent } from './vendedor/contrato/contrato.component';
+import { ReciboAnticipoComponent } from './vendedor/recibo-anticipo/recibo-anticipo.component';
+import { FacturaComponent } from './encargadoFacturacion/factura/factura.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -20,7 +25,13 @@ const routes: Routes = [
   {path: 'encargado-taller', component: EncargadoTallerComponent},
   {path: 'supervisor-taller', component: SupervisorTallerComponent},
   {path: 'cuadrilla-mecanicos', component: CuadrillaMecanicosComponent},
-  {path: 'unidades-disponibles', component: UnidadesDisponiblesComponent},
+  {path: 'unidades-disponibles-vendedor', component: UnidadesDisponiblesComponent},
+  {path: 'clientes-vendedor', component: ClientesComponent},
+  {path: 'cotizacion-vendedor', component: CotizacionComponent},
+  {path: 'servicio-vendedor', component: ServicioComponent},
+  {path: 'contrato-vendedor', component: ContratoComponent},
+  {path: 'recibo-vendedor', component: ReciboAnticipoComponent},
+  {path: 'factura-encfac', component: FacturaComponent},
   {path: '', pathMatch: 'full', redirectTo: 'login'},
   {path: '**', pathMatch: 'full', redirectTo: 'login'}
 ];

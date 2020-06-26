@@ -1,17 +1,55 @@
 <app-nav-vendedor></app-nav-vendedor>
-<div class="container">
-    <div class="row">
-        <div class="col">
+<div class="container mt-5">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
             <h3>Buscar unidades disponibles</h3>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Fecha de salida</label>
-                <input type="date" class="form-control" id="fecha" placeholder="">
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Fecha de salida</label>
+                    <input type="date" class="form-control" id="fecha" placeholder="">
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Fecha de regreso</label>
+                    <input type="date" class="form-control" id="fecha" placeholder="">
+                </div>
             </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Fecha de regreso</label>
-                <input type="date" class="form-control" id="fecha" placeholder="">
+
+            <div class="mt-2">
+                <button (click)="mostrarTabla()" class="btn btn-success">Buscar</button>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </div>
+    </div>
+
+    <div class="row justify-content-md-center" *ngIf="this.bandera">
+        <div class="col-6 mt-4">
+
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col">Numero económico de la unidad</th>
+                        <th scope="col">Operador</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>25</td>
+                        <td>Otto</td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>Thornton</td>
+                    </tr>
+                    <tr>
+                        <td>33</td>
+                        <td>Jacob</td>
+                    </tr>
+                    <tr>
+                        <td>36</td>
+                        <td>Mark</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

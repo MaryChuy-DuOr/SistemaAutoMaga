@@ -1,0 +1,316 @@
+<app-nav-vendedor></app-nav-vendedor>
+<div *ngIf="!this.bandera3">
+    <div class="container mt-5" *ngIf="!this.bandera2">
+        <div class="row justify-content-md-center">
+            <div class="col-8">
+                <h3>Cotizaciones</h3>
+                <label for="exampleInputEmail1">Folio</label>
+                <div class="row">
+                    <div class="col">
+
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-success" (click)="mostrarTabla()">Buscar</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-success mx-2" (click)="registrar()">Registar cotización</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center" *ngIf="!this.bandera1">
+            <div class="col-8 mt-4">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col">Folio</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Id cliente</th>
+                            <th scope="col">Origen</th>
+                            <th scope="col">Destino</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Imprimir</th>
+                            <th scope="col">Editar/Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123</td>
+                            <td>25/06/20</td>
+                            <td>1</td>
+                            <td>Aguascalientes</td>
+                            <td>Guadalajara</td>
+                            <td>$50000</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>124</td>
+                            <td>25/06/20</td>
+                            <td>2</td>
+                            <td>Aguascalientes</td>
+                            <td>Queretaro</td>
+                            <td>$40000</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>125</td>
+                            <td>25/06/20</td>
+                            <td>3</td>
+                            <td>Mexico</td>
+                            <td>Guadalajara</td>
+                            <td>$20000</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>126</td>
+                            <td>26/06/20</td>
+                            <td>4</td>
+                            <td>Aguascalientes</td>
+                            <td>Mexico</td>
+                            <td>$42000</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>127</td>
+                            <td>26/06/20</td>
+                            <td>5</td>
+                            <td>Mxico</td>
+                            <td>Guadalajara</td>
+                            <td>$45000</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center" *ngIf="this.bandera1">
+            <div class="col-8 mt-4">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col">Folio</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Id cliente</th>
+                            <th scope="col">Origen</th>
+                            <th scope="col">Destino</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Imprimir</th>
+                            <th scope="col">Editar/Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>127</td>
+                            <td>26/06/20</td>
+                            <td>5</td>
+                            <td>Mxico</td>
+                            <td>Guadalajara</td>
+                            <td>$45000</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5" *ngIf="this.bandera2">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <h3>Cotización Nueva</h3>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Folio</label>
+                    <input type="text" class="form-control" value="128" readonly>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Fecha</label>
+                    <input type="text" class="form-control" value="27/06/20" readonly>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Cliente</label>
+                <select class="form-control" formControlName="rol">
+                    <option value="1">Juan</option>
+                    <option value="2">Cesar</option>
+                    <option value="3">Marìa</option>
+                    <option value="4">Diego</option>
+                    <option value="5">Tania</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Fecha y hora de salida</label>
+                    <input type="datetime" class="form-control" placeholder="">
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Fecha y hora de regreso</label>
+                    <input type="datetime" class="form-control" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Origen</label>
+                    <select class="form-control" formControlName="rol">
+                            <option value="1">Mexico</option>
+                            <option value="2">Aguascalientes</option>
+                            <option value="3">Guadalajara</option>
+                            <option value="4">Queretaro</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Destino</label>
+                    <select class="form-control" formControlName="rol">
+                            <option value="1">Mexico</option>
+                            <option value="2">Aguascalientes</option>
+                            <option value="3">Guadalajara</option>
+                            <option value="4">Queretaro</option>
+                        </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Pasajeros</label>
+                    <input type="number" class="form-control" placeholder="">
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Precio</label>
+                    <input type="number" class="form-control" value="40000" readonly>
+                    <button class="btn btn-success mx-2">Calcular</button>
+                </div>
+            </div>
+
+            <div class="mt-2">
+                <button class="btn btn-success" (click)="registrar()">Registar Cotización</button>
+                <button class="btn btn-success mx-2" (click)="registrar()">Regresar</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container mt-5" *ngIf="this.bandera3">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <h3>Cotización</h3>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Folio</label>
+                    <input type="text" class="form-control" value="123" readonly>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Fecha</label>
+                    <input type="text" class="form-control" value="25/06/20" readonly>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Cliente</label>
+                <input type="text" class="form-control" value="1" readonly>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Fecha y hora de salida</label>
+                    <input type="text" class="form-control" value="Aguascalientes" readonly>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Fecha y hora de regreso</label>
+                    <input type="text" class="form-control" value="Guadalajara" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Origen</label>
+                    <input type="text" class="form-control" value="30/06/20 22:00" readonly>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Destino</label>
+                    <input type="text" class="form-control" value="4/07/20 7:00" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Pasajeros</label>
+                    <input type="number" class="form-control" value="50" placeholder="" readonly>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Precio</label>
+                    <input type="number" class="form-control" value="50000" readonly>
+                </div>
+            </div>
+
+            <div class="mt-2">
+                <button class="btn btn-success">Imprimir Cotización</button>
+                <button class="btn btn-success mx-2" (click)="imprimir()">Regresar</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>

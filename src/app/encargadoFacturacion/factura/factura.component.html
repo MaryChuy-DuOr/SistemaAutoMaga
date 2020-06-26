@@ -1,0 +1,254 @@
+<app-nav-encargado-facturacion></app-nav-encargado-facturacion>
+<div *ngIf="!this.bandera3">
+    <div class="container mt-5" *ngIf="!this.bandera2">
+        <div class="row justify-content-md-center">
+            <div class="col-8">
+                <h3>Facturas</h3>
+                <label for="exampleInputEmail1">Numero</label>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-success" (click)="mostrarTabla()">Buscar</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-success mx-2" (click)="registrar()">Registrar cotización</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center" *ngIf="!this.bandera1">
+            <div class="col-8 mt-4">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col">Número</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Id cliente</th>
+                            <th scope="col">Imprimir/Enviar</th>
+                            <th scope="col">Editar/Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#93845</td>
+                            <td>15/06/20</td>
+                            <td>1</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#34852</td>
+                            <td>10/06/20</td>
+                            <td>2</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#73462</td>
+                            <td>20/06/20</td>
+                            <td>3</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#82327</td>
+                            <td>26/06/20</td>
+                            <td>4</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#35263</td>
+                            <td>26/06/20</td>
+                            <td>5</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center" *ngIf="this.bandera1">
+            <div class="col-8 mt-4">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col">Número</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Id cliente</th>
+                            <th scope="col">Imprimir/Enviar</th>
+                            <th scope="col">Editar/Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#93845</td>
+                            <td>15/06/20</td>
+                            <td>1</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5" *ngIf="this.bandera2">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <h3>Factura Nueva</h3>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Numero</label>
+                <input type="text" class="form-control" value="#94757" readonly>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Direccion</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">CIF</label>
+                <input type="text" class="form-control" value="XXXXXXXXXX" readonly>
+            </div>
+            <div class="form-group">
+
+                <label for="exampleInputEmail1">Fecha</label>
+                <input type="date" class="form-control" value="27/06/20" readonly>
+            </div>
+            <div class="form-group">
+
+                <label for="exampleInputEmail1">Concepto</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Monto</label>
+                <input type="number" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Tipo de iba</label>
+                <input type="text" class="form-control" value="%16" readonly>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Total</label>
+                <input type="number" class="form-control">
+            </div>
+
+            <div class="mt-2">
+                <button class="btn btn-success" (click)="registrar()">Registar Factura</button>
+                <button class="btn btn-success mx-2" (click)="registrar()">Regresar</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container mt-5" *ngIf="this.bandera3">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Numero</label>
+                <input type="text" class="form-control" value="#93845" readonly>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Direccion</label>
+                <input type="text" class="form-control" value="Avenida Av Calle CP" readonly>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">CIF</label>
+                <input type="text" class="form-control" value="XXXXXXXXXX" readonly>
+            </div>
+            <div class="form-group">
+
+                <label for="exampleInputEmail1">Fecha</label>
+                <input type="date" class="form-control" value="27/06/20" readonly>
+            </div>
+            <div class="form-group">
+
+                <label for="exampleInputEmail1">Concepto</label>
+                <input type="text" class="form-control" value="Contrato numero 789" readonly>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Monto</label>
+                <input type="number" class="form-control" value="40000" readonly>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Tipo de iba</label>
+                <input type="text" class="form-control" value="%16" readonly>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Total</label>
+                <input type="number" class="form-control" value="46400" readonly>
+            </div>
+            <div class="mt-2">
+                <button class="btn btn-success">Enviar Cotización</button>
+            </div>
+            <div class="mt-2">
+                <button class="btn btn-success">Imprimir Cotización</button>
+                <button class="btn btn-success mx-2" (click)="imprimir()">Regresar</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
