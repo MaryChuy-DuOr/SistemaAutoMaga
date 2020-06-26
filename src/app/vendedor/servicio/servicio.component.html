@@ -1,0 +1,61 @@
+<app-nav-vendedor></app-nav-vendedor>
+<div class="container mt-5">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <h3>Servicios</h3>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Tipo de unidad</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Precio</label>
+                <input type="number" class="form-control">
+            </div>
+
+            <div class="mt-2">
+                <button class="btn btn-success">Agregar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+        <div class="col-8 mt-4">
+
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col">Id Servicio</th>
+                        <th scope="col">Tipo de Unidad</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Editar/Borrar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Autobús</td>
+                        <td>$5,000</td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Camioneta</td>
+                        <td>$2,000</td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

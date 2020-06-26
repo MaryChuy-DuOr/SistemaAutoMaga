@@ -1,0 +1,186 @@
+<app-nav-vendedor></app-nav-vendedor>
+<div class="container mt-5" *ngIf="!this.bandera2">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <h3>Clientes</h3>
+            <label for="exampleInputEmail1">Nombre del cliente</label>
+            <div class="row">
+                <div class="col">
+
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col">
+                    <button class="btn btn-success" (click)="mostrarTabla()">Buscar</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-success mx-2" (click)="registrar()">Registar cliente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-md-center" *ngIf="!this.bandera1">
+        <div class="col-8 mt-4">
+
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col">Id Cliente</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido Paterno</th>
+                        <th scope="col">Apellido Materno</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Editar/Borrar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Juan</td>
+                        <td>Perez</td>
+                        <td>Martínez</td>
+                        <td>4491234567</td>
+                        <td>juan@gmail.com</td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Cesar</td>
+                        <td>Ramirez</td>
+                        <td>Muñoz</td>
+                        <td>4497894561</td>
+                        <td>cesar@gmail.com</td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>María</td>
+                        <td>Quiroz</td>
+                        <td>Jimenez</td>
+                        <td>4494568974</td>
+                        <td>mary@gmail.com</td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Diego</td>
+                        <td>Pedroza</td>
+                        <td>Hernandez</td>
+                        <td>4495984265</td>
+                        <td>diego@gmail.com</td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Tania</td>
+                        <td>Viramontes</td>
+                        <td>Perez</td>
+                        <td>4498524163</td>
+                        <td>tania@gmail.com</td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row justify-content-md-center" *ngIf="this.bandera1">
+        <div class="col-8 mt-4">
+
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col">Id Cliente</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido Paterno</th>
+                        <th scope="col">Apellido Materno</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Editar/Borrar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3</td>
+                        <td>María</td>
+                        <td>Quiroz</td>
+                        <td>Jimenez</td>
+                        <td>4494568974</td>
+                        <td>mary@gmail.com</td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5" *ngIf="this.bandera2">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <h3>Clientes</h3>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Nombre</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Apellido Materno</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Apellido Paterno</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Apellido Paterno</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Telefono</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Correo</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="mt-2">
+                <button class="btn btn-success" (click)="registrar()">Registar cliente</button>
+                <button class="btn btn-success mx-2" (click)="registrar()">Regresar</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>

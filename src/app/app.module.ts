@@ -21,6 +21,12 @@ import { NavSupervisorTallerComponent } from './supervisorTaller/nav-supervisor-
 import { NavCuadrillaMecanicosComponent } from './cuadrillaMecanicos/nav-cuadrilla-mecanicos/nav-cuadrilla-mecanicos.component';
 import { CuadrillaMecanicosComponent } from './cuadrillaMecanicos/cuadrilla-mecanicos/cuadrilla-mecanicos.component';
 import { UnidadesDisponiblesComponent } from './vendedor/unidades-disponibles/unidades-disponibles.component';
+import { ServicioComponent } from './vendedor/servicio/servicio.component';
+import { ClientesComponent } from './vendedor/clientes/clientes.component';
+import { CotizacionComponent } from './vendedor/cotizacion/cotizacion.component';
+import { ContratoComponent } from './vendedor/contrato/contrato.component';
+import { ReciboAnticipoComponent } from './vendedor/recibo-anticipo/recibo-anticipo.component';
+import { FacturaComponent } from './encargadoFacturacion/factura/factura.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +46,13 @@ import { UnidadesDisponiblesComponent } from './vendedor/unidades-disponibles/un
     NavSupervisorTallerComponent,
     NavCuadrillaMecanicosComponent,
     CuadrillaMecanicosComponent,
-    UnidadesDisponiblesComponent
+    UnidadesDisponiblesComponent,
+    ServicioComponent,
+    ClientesComponent,
+    CotizacionComponent,
+    ContratoComponent,
+    ReciboAnticipoComponent,
+    FacturaComponent
   ],
   imports: [
     BrowserModule,
