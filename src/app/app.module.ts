@@ -30,6 +30,11 @@ import { FacturaComponent } from './encargadoFacturacion/factura/factura.compone
 import { AsignarComponent } from './supervisorTaller/asignar/asignar.component';
 import { RevisarReporteComponent } from './supervisorTaller/revisar-reporte/revisar-reporte.component';
 import { RegistrarComponent } from './supervisorTaller/registrar/registrar.component';
+import { AnadirFormatoComponent } from './encargadoTaller/anadir-formato/anadir-formato.component';
+import { FormatoServicioComponent } from './encargadoTaller/formato-servicio/formato-servicio.component';
+import { ImprimirFormatoComponent } from './encargadoTaller/imprimir-formato/imprimir-formato.component';
+import { EntregarReporteComponent } from './cuadrillaMecanicos/entregar-reporte/entregar-reporte.component';
+import { RegistrarServiciosComponent } from './cuadrillaMecanicos/registrar-servicios/registrar-servicios.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +64,11 @@ import { RegistrarComponent } from './supervisorTaller/registrar/registrar.compo
     AsignarComponent,
     RevisarReporteComponent,
     RegistrarComponent,
+    AnadirFormatoComponent,
+    FormatoServicioComponent,
+    ImprimirFormatoComponent,
+    EntregarReporteComponent,
+    RegistrarServiciosComponent
   ],
   imports: [
     BrowserModule,

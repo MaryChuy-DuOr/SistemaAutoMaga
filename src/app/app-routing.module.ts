@@ -18,6 +18,9 @@ import { FacturaComponent } from './encargadoFacturacion/factura/factura.compone
 import { AsignarComponent } from './supervisorTaller/asignar/asignar.component';
 import { RevisarReporteComponent } from './supervisorTaller/revisar-reporte/revisar-reporte.component';
 import { RegistrarComponent } from './supervisorTaller/registrar/registrar.component';
+import { FormatoServicioComponent } from './encargadoTaller/formato-servicio/formato-servicio.component';
+import { ImprimirFormatoComponent } from './encargadoTaller/imprimir-formato/imprimir-formato.component';
+import { AnadirFormatoComponent } from './encargadoTaller/anadir-formato/anadir-formato.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -38,6 +41,9 @@ const routes: Routes = [
   {path: 'asignar', component: AsignarComponent},
   {path: 'revisar', component: RevisarReporteComponent },
   {path: 'registrar', component: RegistrarComponent},
+  {path: 'formato', component: FormatoServicioComponent},
+  {path: 'imprimir', component: ImprimirFormatoComponent},
+  {path: 'anadir', component: AnadirFormatoComponent},
   {path: '', pathMatch: 'full', redirectTo: 'login'},
   {path: '**', pathMatch: 'full', redirectTo: 'login'}
 ];
