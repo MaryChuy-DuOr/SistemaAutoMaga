@@ -15,7 +15,9 @@ import { CotizacionComponent } from './vendedor/cotizacion/cotizacion.component'
 import { ContratoComponent } from './vendedor/contrato/contrato.component';
 import { ReciboAnticipoComponent } from './vendedor/recibo-anticipo/recibo-anticipo.component';
 import { FacturaComponent } from './encargadoFacturacion/factura/factura.component';
-import { NavSupervisorTallerComponent } from './supervisorTaller/nav-supervisor-taller/nav-supervisor-taller.component';
+import { AsignarComponent } from './supervisorTaller/asignar/asignar.component';
+import { RevisarReporteComponent } from './supervisorTaller/revisar-reporte/revisar-reporte.component';
+import { RegistrarComponent } from './supervisorTaller/registrar/registrar.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -33,7 +35,9 @@ const routes: Routes = [
   {path: 'contrato-vendedor', component: ContratoComponent},
   {path: 'recibo-vendedor', component: ReciboAnticipoComponent},
   {path: 'factura-encfac', component: FacturaComponent},
-  {path: 'Asignar-Cuadrilla', component: NavSupervisorTallerComponent },
+  {path: 'asignar', component: AsignarComponent},
+  {path: 'revisar', component: RevisarReporteComponent },
+  {path: 'registrar', component: RegistrarComponent},
   {path: '', pathMatch: 'full', redirectTo: 'login'},
   {path: '**', pathMatch: 'full', redirectTo: 'login'}
 ];

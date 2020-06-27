@@ -27,7 +27,9 @@ import { CotizacionComponent } from './vendedor/cotizacion/cotizacion.component'
 import { ContratoComponent } from './vendedor/contrato/contrato.component';
 import { ReciboAnticipoComponent } from './vendedor/recibo-anticipo/recibo-anticipo.component';
 import { FacturaComponent } from './encargadoFacturacion/factura/factura.component';
-import { AsignarComponent } from './supervisortaller/Asignar/asignar/asignar.component';
+import { AsignarComponent } from './supervisorTaller/asignar/asignar.component';
+import { RevisarReporteComponent } from './supervisorTaller/revisar-reporte/revisar-reporte.component';
+import { RegistrarComponent } from './supervisorTaller/registrar/registrar.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { AsignarComponent } from './supervisortaller/Asignar/asignar/asignar.com
     ContratoComponent,
     ReciboAnticipoComponent,
     FacturaComponent,
-    AsignarComponent
+    AsignarComponent,
+    RevisarReporteComponent,
+    RegistrarComponent,
   ],
   imports: [
     BrowserModule,
