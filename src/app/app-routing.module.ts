@@ -21,6 +21,8 @@ import { RegistrarComponent } from './supervisorTaller/registrar/registrar.compo
 import { FormatoServicioComponent } from './encargadoTaller/formato-servicio/formato-servicio.component';
 import { ImprimirFormatoComponent } from './encargadoTaller/imprimir-formato/imprimir-formato.component';
 import { AnadirFormatoComponent } from './encargadoTaller/anadir-formato/anadir-formato.component';
+import { RegistrarServiciosComponent } from './cuadrillaMecanicos/registrar-servicios/registrar-servicios.component';
+import { EntregarReporteComponent } from './cuadrillaMecanicos/entregar-reporte/entregar-reporte.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -44,6 +46,8 @@ const routes: Routes = [
   {path: 'formato', component: FormatoServicioComponent},
   {path: 'imprimir', component: ImprimirFormatoComponent},
   {path: 'anadir', component: AnadirFormatoComponent},
+  {path: 'registrarS', component: RegistrarServiciosComponent},
+  {path: 'entregar', component: EntregarReporteComponent },
   {path: '', pathMatch: 'full', redirectTo: 'login'},
   {path: '**', pathMatch: 'full', redirectTo: 'login'}
 ];
