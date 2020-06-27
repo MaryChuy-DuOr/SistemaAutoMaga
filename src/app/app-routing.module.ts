@@ -15,6 +15,14 @@ import { CotizacionComponent } from './vendedor/cotizacion/cotizacion.component'
 import { ContratoComponent } from './vendedor/contrato/contrato.component';
 import { ReciboAnticipoComponent } from './vendedor/recibo-anticipo/recibo-anticipo.component';
 import { FacturaComponent } from './encargadoFacturacion/factura/factura.component';
+import { AsignarComponent } from './supervisorTaller/asignar/asignar.component';
+import { RevisarReporteComponent } from './supervisorTaller/revisar-reporte/revisar-reporte.component';
+import { RegistrarComponent } from './supervisorTaller/registrar/registrar.component';
+import { FormatoServicioComponent } from './encargadoTaller/formato-servicio/formato-servicio.component';
+import { ImprimirFormatoComponent } from './encargadoTaller/imprimir-formato/imprimir-formato.component';
+import { AnadirFormatoComponent } from './encargadoTaller/anadir-formato/anadir-formato.component';
+import { RegistrarServiciosComponent } from './cuadrillaMecanicos/registrar-servicios/registrar-servicios.component';
+import { EntregarReporteComponent } from './cuadrillaMecanicos/entregar-reporte/entregar-reporte.component';
 import { AsigUnOpComponent } from './administrador/asig-un-op/asig-un-op.component';
 import { GasolinaComponent } from './administrador/gasolina/gasolina.component';
 import { ViaticosComponent } from'./administrador/viaticos/viaticos.component';
@@ -38,6 +46,14 @@ const routes: Routes = [
   {path: 'contrato-vendedor', component: ContratoComponent},
   {path: 'recibo-vendedor', component: ReciboAnticipoComponent},
   {path: 'factura-encfac', component: FacturaComponent},
+  {path: 'asignar', component: AsignarComponent},
+  {path: 'revisar', component: RevisarReporteComponent },
+  {path: 'registrar', component: RegistrarComponent},
+  {path: 'formato', component: FormatoServicioComponent},
+  {path: 'imprimir', component: ImprimirFormatoComponent},
+  {path: 'anadir', component: AnadirFormatoComponent},
+  {path: 'registrarS', component: RegistrarServiciosComponent},
+  {path: 'entregar', component: EntregarReporteComponent },
   {path: 'unidad', component: UnidadComponent},
   {path: 'operador', component: OperadorComponent},
   {path: 'asig-UnOp', component: AsigUnOpComponent},

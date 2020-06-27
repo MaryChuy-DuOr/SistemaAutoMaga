@@ -1,0 +1,47 @@
+<app-nav-encargado-taller></app-nav-encargado-taller>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Numero Economico</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese numero">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Tipo de Servicio</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+    <select class="form-control" id="sel1">
+      <option>Selecciona uno</option>
+      <option>10%</option>
+      <option>20%</option>
+      <option>30%</option>
+      <option>40% </option>
+      <option>50%</option>
+      <option>60%</option>
+      <option>70%</option>
+      <option>80% </option>
+      <option>90%</option>
+      <option>100% </option>
+    </select>
+    <p>Añada mas Servicios</p>
+  </div>
+
+  <div class="form-group" *ngIf="shw">
+    <label for="exampleInputPassword1">Tipo de Servicio</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+    <select class="form-control" id="sel1">
+      <option>Selecciona uno</option>
+      <option>10%</option>
+      <option>20%</option>
+      <option>30%</option>
+      <option>40% </option>
+      <option>50%</option>
+      <option>60%</option>
+      <option>70%</option>
+      <option>80% </option>
+      <option>90%</option>
+      <option>100% </option>
+    </select>
+  </div>
+  <div>
+    <button type="button" class="btn btn-secondary" (click) ="show()"> <i class="fas fa-plus-circle"></i> </button>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

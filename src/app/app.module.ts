@@ -27,6 +27,14 @@ import { CotizacionComponent } from './vendedor/cotizacion/cotizacion.component'
 import { ContratoComponent } from './vendedor/contrato/contrato.component';
 import { ReciboAnticipoComponent } from './vendedor/recibo-anticipo/recibo-anticipo.component';
 import { FacturaComponent } from './encargadoFacturacion/factura/factura.component';
+import { AsignarComponent } from './supervisorTaller/asignar/asignar.component';
+import { RevisarReporteComponent } from './supervisorTaller/revisar-reporte/revisar-reporte.component';
+import { RegistrarComponent } from './supervisorTaller/registrar/registrar.component';
+import { AnadirFormatoComponent } from './encargadoTaller/anadir-formato/anadir-formato.component';
+import { FormatoServicioComponent } from './encargadoTaller/formato-servicio/formato-servicio.component';
+import { ImprimirFormatoComponent } from './encargadoTaller/imprimir-formato/imprimir-formato.component';
+import { EntregarReporteComponent } from './cuadrillaMecanicos/entregar-reporte/entregar-reporte.component';
+import { RegistrarServiciosComponent } from './cuadrillaMecanicos/registrar-servicios/registrar-servicios.component';
 import { AsigUnOpComponent } from './administrador/asig-un-op/asig-un-op.component';
 import { GasolinaComponent } from './administrador/gasolina/gasolina.component';
 import { ViaticosComponent } from './administrador/viaticos/viaticos.component';
@@ -59,6 +67,14 @@ import { UnidadAccesoComponent } from './encargadoAcceso/unidad-acceso/unidad-ac
     ContratoComponent,
     ReciboAnticipoComponent,
     FacturaComponent,
+    AsignarComponent,
+    RevisarReporteComponent,
+    RegistrarComponent,
+    AnadirFormatoComponent,
+    FormatoServicioComponent,
+    ImprimirFormatoComponent,
+    EntregarReporteComponent,
+    RegistrarServiciosComponent,
     AsigUnOpComponent,
     GasolinaComponent,
     ViaticosComponent,
