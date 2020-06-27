@@ -1,0 +1,236 @@
+<app-nav-administrador></app-nav-administrador>
+<div *ngIf="!this.bandera3">
+    <div class="container mt-5" *ngIf="!this.bandera2">
+        <div class="row justify-content-md-center">
+            <div class="col-8">
+                <h3>Vales de Gasolina</h3>
+                <label for="exampleInputEmail1">ID</label>
+                <div class="row">
+                    <div class="col">
+
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-success" (click)="mostrarTabla()">Buscar</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-success mx-2" (click)="registrar()">Registar vale de gasolina</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center" *ngIf="!this.bandera1">
+            <div class="col-8 mt-4">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col">ID</th>
+                            <th scope="col">ID Viaje</th>
+                            <th scope="col">Gasolinera</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Imprimir</th>
+                            <th scope="col">Editar/Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>123</td>
+                            <td>Pemex</td>
+                            <td>5000</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>124</td>
+                            <td>Red</td>
+                            <td>4000</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>125</td>
+                            <td>Total Gas</td>
+                            <td>600</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>126</td>
+                            <td>Pemex</td>
+                            <td>850</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>123</td>
+                            <td>Red</td>
+                            <td>1500</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center" *ngIf="this.bandera1">
+            <div class="col-8 mt-4">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col">ID</th>
+                            <th scope="col">ID Viaje</th>
+                            <th scope="col">Gasolinera</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Imprimir</th>
+                            <th scope="col">Editar/Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5</td>
+                            <td>123</td>
+                            <td>Red</td>
+                            <td>1500</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5" *ngIf="this.bandera2">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <h3>Nuevo Vale de Gasolina</h3>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">ID</label>
+                    <input type="text" class="form-control" value="128" readonly>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">ID Viaje</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Gasolinera</label>
+                    <input type="datetime" class="form-control" placeholder="">
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Cantidad</label>
+                    <input type="datetime" class="form-control" placeholder="">
+                </div>
+            </div>
+
+            <div class="mt-2">
+                <button class="btn btn-success" (click)="registrar()">Registar Vale</button>
+                <button class="btn btn-success mx-2" (click)="registrar()">Regresar</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container mt-5" *ngIf="this.bandera3">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <h3>Vale de Gasolina</h3>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">ID</label>
+                    <input type="text" class="form-control" value="1" readonly>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">ID Viaje</label>
+                    <input type="text" class="form-control" value="123" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Gasolinera</label>
+                    <input type="datetime" class="form-control" value="Pemex" readonly>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Cantidad</label>
+                    <input type="datetime" class="form-control" value="5000" readonly>
+                </div>
+            </div>
+
+            <div class="mt-2">
+                <button class="btn btn-success">Imprimir Vale de Gasolina</button>
+                <button class="btn btn-success mx-2" (click)="imprimir()">Regresar</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>

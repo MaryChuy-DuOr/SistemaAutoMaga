@@ -23,6 +23,12 @@ import { ImprimirFormatoComponent } from './encargadoTaller/imprimir-formato/imp
 import { AnadirFormatoComponent } from './encargadoTaller/anadir-formato/anadir-formato.component';
 import { RegistrarServiciosComponent } from './cuadrillaMecanicos/registrar-servicios/registrar-servicios.component';
 import { EntregarReporteComponent } from './cuadrillaMecanicos/entregar-reporte/entregar-reporte.component';
+import { AsigUnOpComponent } from './administrador/asig-un-op/asig-un-op.component';
+import { GasolinaComponent } from './administrador/gasolina/gasolina.component';
+import { ViaticosComponent } from'./administrador/viaticos/viaticos.component';
+import { UnidadComponent } from './administrador/unidad/unidad.component';
+import { OperadorComponent } from './administrador/operador/operador.component';
+import { UnidadAccesoComponent } from './encargadoAcceso/unidad-acceso/unidad-acceso.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -48,6 +54,12 @@ const routes: Routes = [
   {path: 'anadir', component: AnadirFormatoComponent},
   {path: 'registrarS', component: RegistrarServiciosComponent},
   {path: 'entregar', component: EntregarReporteComponent },
+  {path: 'unidad', component: UnidadComponent},
+  {path: 'operador', component: OperadorComponent},
+  {path: 'asig-UnOp', component: AsigUnOpComponent},
+  {path: 'gasolina', component: GasolinaComponent},
+  {path: 'viaticos', component: ViaticosComponent},
+  {path: 'acceso', component: UnidadAccesoComponent},
   {path: '', pathMatch: 'full', redirectTo: 'login'},
   {path: '**', pathMatch: 'full', redirectTo: 'login'}
 ];

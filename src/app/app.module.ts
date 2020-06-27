@@ -35,6 +35,12 @@ import { FormatoServicioComponent } from './encargadoTaller/formato-servicio/for
 import { ImprimirFormatoComponent } from './encargadoTaller/imprimir-formato/imprimir-formato.component';
 import { EntregarReporteComponent } from './cuadrillaMecanicos/entregar-reporte/entregar-reporte.component';
 import { RegistrarServiciosComponent } from './cuadrillaMecanicos/registrar-servicios/registrar-servicios.component';
+import { AsigUnOpComponent } from './administrador/asig-un-op/asig-un-op.component';
+import { GasolinaComponent } from './administrador/gasolina/gasolina.component';
+import { ViaticosComponent } from './administrador/viaticos/viaticos.component';
+import { UnidadComponent } from './administrador/unidad/unidad.component';
+import { OperadorComponent } from './administrador/operador/operador.component';
+import { UnidadAccesoComponent } from './encargadoAcceso/unidad-acceso/unidad-acceso.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +74,13 @@ import { RegistrarServiciosComponent } from './cuadrillaMecanicos/registrar-serv
     FormatoServicioComponent,
     ImprimirFormatoComponent,
     EntregarReporteComponent,
-    RegistrarServiciosComponent
+    RegistrarServiciosComponent,
+    AsigUnOpComponent,
+    GasolinaComponent,
+    ViaticosComponent,
+    UnidadComponent,
+    OperadorComponent,
+    UnidadAccesoComponent
   ],
   imports: [
     BrowserModule,
