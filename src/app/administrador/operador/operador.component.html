@@ -1,0 +1,275 @@
+<app-nav-administrador></app-nav-administrador>
+<div class="container mt-5" *ngIf="!this.bandera2">
+    <div class="row justify-content-md-center">
+        <div class="col-10">
+            <h3>Operadores</h3>
+            <label for="exampleInputEmail1">ID</label>
+            <div class="row">
+                <div class="col">
+
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col">
+                    <button class="btn btn-success" (click)="mostrarTabla()">Buscar</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-success mx-2" (click)="registrar()">Registar operador</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-md-center" *ngIf="!this.bandera1">
+        <div class="col-12 mt-4">
+
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Domicilio</th>
+                        <th scope="col">Municip/Estado</th>
+                        <th scope="col">Tel</th>
+                        <th scope="col">Sueldo</th>
+                        <th scope="col">Licencia</th>
+                        <th scope="col">Fec-Ven-Lic</th>
+                        <th scope="col">Fec-Venc-EM</th>
+                        <th scope="col"># Tarjeta</th>
+                        <th scope="col">Editar/Borrar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1865</td>
+                        <td>Juan Pantoja Gutierrez</td>
+                        <td>Leopoldo Mendez 123 Pintores Mex. 20179</td>
+                        <td>Aguascalientes, Aguascalientes</td>
+                        <td>4491234567</td>
+                        <td>2500</td>
+                        <td>AGS0010298</td>
+                        <td>04/03/2022</td>
+                        <td>31/12/2020</td>
+                        <td>1234-5678-9101-1213</td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2896</td>
+                        <td>Jaime de Avila Rojas</td>
+                        <td>Martires del Rio 201 Cumbres 20179</td>
+                        <td>Aguascalientes, Aguascalientes</td>
+                        <td>4498564567</td>
+                        <td>3600</td>
+                        <td>AGS0010365</td>
+                        <td>30/12/2022</td>
+                        <td>31/12/2020</td>
+                        <td>9876-5432-1011-9632</td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3545</td>
+                        <td>Gerardo Dueñas Hernandez</td>
+                        <td>Jupiter 514 Santa Anita 20220</td>
+                        <td>Aguascalientes, Aguascalientes</td>
+                        <td>4499939364</td>
+                        <td>2300</td>
+                        <td>AGS0010425</td>
+                        <td>30/12/2022</td>
+                        <td>31/12/2020</td>
+                        <td>7410-8520-9630-7896</td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row justify-content-md-center" *ngIf="this.bandera1">
+        <div class="col-12 mt-4">
+
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Domicilio</th>
+                        <th scope="col">Municip/Estado</th>
+                        <th scope="col">Tel</th>
+                        <th scope="col">Sueldo</th>
+                        <th scope="col">Licencia</th>
+                        <th scope="col">Fec-Ven-Lic</th>
+                        <th scope="col">Fec-Venc-EM</th>
+                        <th scope="col"># Tarjeta</th>
+                        <th scope="col">Editar/Borrar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>3545</td>
+                        <td>Gerardo Dueñas Hernandez</td>
+                        <td>Jupiter 514 Santa Anita 20220</td>
+                        <td>Aguascalientes, Aguascalientes</td>
+                        <td>4499939364</td>
+                        <td>2300</td>
+                        <td>AGS0010425</td>
+                        <td>30/12/2022</td>
+                        <td>31/12/2020</td>
+                        <td>7410-8520-9630-7896</td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5" *ngIf="this.bandera2">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <h3>Operdores</h3>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Nombre</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Apellido Paterno</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Apellido Materno</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <label for="exampleInputEmail1"><strong>Domicilio</strong> </label>
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Calle</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Numero exterior</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Numero Interior</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+           <div class="row">
+               <div class="col-6">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Colonia</label>
+                    <input type="text" class="form-control">
+                </div>
+               </div>
+               <div class="col">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">C.P.</label>
+                    <input type="text" class="form-control">
+                </div>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col">
+                   <div class="form-group">
+                        <label for="exampleInputEmail1">Municipio</label>
+                        <input type="text" class="form-control">
+                    </div></div>
+               <div class="col">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Estado</label>
+                    <input type="text" class="form-control">
+                </div>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Telefono</label>
+                        <input type="text" class="form-control">
+                    </div>
+               </div>
+               <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Celular</label>
+                        <input type="text" class="form-control">
+                    </div>
+               </div>
+           </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Sueldo</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Licencia</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Fecha vencimiento licencia</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Numero Estado Médico</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Fecha vencimiento Estado Medico</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Numero Tarjeta de Débito</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="mt-2">
+                <button class="btn btn-success" (click)="registrar()">Registar operador</button>
+                <button class="btn btn-success mx-2" (click)="registrar()">Regresar</button>
+            </div>
+        </div>
+    </div>
+</div>
+

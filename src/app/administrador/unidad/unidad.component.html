@@ -1,0 +1,219 @@
+<app-nav-administrador></app-nav-administrador>
+<div class="container mt-5" *ngIf="!this.bandera2">
+    <div class="row justify-content-md-center">
+        <div class="col-10">
+            <h3>Unidades</h3>
+            <label for="exampleInputEmail1"># Economico</label>
+            <div class="row">
+                <div class="col">
+
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col">
+                    <button class="btn btn-success" (click)="mostrarTabla()">Buscar</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-success mx-2" (click)="registrar()">Registar unidad</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-md-center" *ngIf="!this.bandera1">
+        <div class="col-10 mt-4">
+
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col"># Economico</th>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Modelo</th>
+                        <th scope="col">Capacidad</th>
+                        <th scope="col">Tipo_Combustible</th>
+                        <th scope="col">Rend_Km</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Cantidad Llantas</th>
+                        <th scope="col">Editar/Borrar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>187641</td>
+                        <td>Mercedes-Benz</td>
+                        <td>Sprinter</td>
+                        <td>14</td>
+                        <td>Diesel</td>
+                        <td>9,1</td>
+                        <td>Camioneta</td>
+                        <td>4</td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>298562</td>
+                        <td>Volvo</td>
+                        <td>VOLVO 9800</td>
+                        <td>40</td>
+                        <td>Diesel</td>
+                        <td>15.2</td>
+                        <td>Autobus</td>
+                        <td>8</td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>375612</td>
+                        <td>Mercedes-Benz</td>
+                        <td>TORINO OH</td>
+                        <td>40</td>
+                        <td>Diesel</td>
+                        <td>16.3</td>
+                        <td>Autobus</td>
+                        <td>8</td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>487456</td>
+                        <td>Mercedes-Benz</td>
+                        <td>Sprinter</td>
+                        <td>14</td>
+                        <td>Diesel</td>
+                        <td>9,1</td>
+                        <td>Camioneta</td>
+                        <td>4</td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>587462</td>
+                        <td>Volvo</td>
+                        <td>VOLVO 9800</td>
+                        <td>40</td>
+                        <td>Diesel</td>
+                        <td>15.2</td>
+                        <td>Autobus</td>
+                        <td>8</td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row justify-content-md-center" *ngIf="this.bandera1">
+        <div class="col-10 mt-4">
+
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-primary">
+                        <th scope="col"># Economico</th>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Modelo</th>
+                        <th scope="col">Capacidad</th>
+                        <th scope="col">Tipo_Combustible</th>
+                        <th scope="col">Rend_Km</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Cantidad Llantas</th>
+                        <th scope="col">Editar/Borrar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>187641</td>
+                        <td>Mercedes-Benz</td>
+                        <td>Sprinter</td>
+                        <td>14</td>
+                        <td>Diesel</td>
+                        <td>9,1</td>
+                        <td>Camioneta</td>
+                        <td>4</td>
+                        <td>
+                            <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5" *ngIf="this.bandera2">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <h3>Unidades</h3>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Numero Economico</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Marca</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Modelo</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Capacidad</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Tipo Combustible</label>
+                        <select class="form-control" formControlName="rol">
+                            <option value="1">Magna</option>
+                            <option value="2">Premium</option>
+                            <option value="3">Diesel</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Tipo Unidad</label>
+                        <select class="form-control" formControlName="rol">
+                            <option value="1">Camioneta</option>
+                            <option value="2">Autobus</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Cantidad Llantas</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="mt-2">
+                <button class="btn btn-success" (click)="registrar()">Registar unidad</button>
+                <button class="btn btn-success mx-2" (click)="registrar()">Regresar</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>

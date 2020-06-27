@@ -15,6 +15,11 @@ import { CotizacionComponent } from './vendedor/cotizacion/cotizacion.component'
 import { ContratoComponent } from './vendedor/contrato/contrato.component';
 import { ReciboAnticipoComponent } from './vendedor/recibo-anticipo/recibo-anticipo.component';
 import { FacturaComponent } from './encargadoFacturacion/factura/factura.component';
+import { AsigUnOpComponent } from './administrador/asig-un-op/asig-un-op.component';
+import { GasolinaComponent } from './administrador/gasolina/gasolina.component';
+import { ViaticosComponent } from'./administrador/viaticos/viaticos.component';
+import { UnidadComponent } from './administrador/unidad/unidad.component';
+import { OperadorComponent } from './administrador/operador/operador.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -32,6 +37,11 @@ const routes: Routes = [
   {path: 'contrato-vendedor', component: ContratoComponent},
   {path: 'recibo-vendedor', component: ReciboAnticipoComponent},
   {path: 'factura-encfac', component: FacturaComponent},
+  {path: 'unidad', component: UnidadComponent},
+  {path: 'operador', component: OperadorComponent},
+  {path: 'asig-UnOp', component: AsigUnOpComponent},
+  {path: 'gasolina', component: GasolinaComponent},
+  {path: 'viaticos', component: ViaticosComponent},
   {path: '', pathMatch: 'full', redirectTo: 'login'},
   {path: '**', pathMatch: 'full', redirectTo: 'login'}
 ];

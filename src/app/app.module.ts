@@ -27,6 +27,11 @@ import { CotizacionComponent } from './vendedor/cotizacion/cotizacion.component'
 import { ContratoComponent } from './vendedor/contrato/contrato.component';
 import { ReciboAnticipoComponent } from './vendedor/recibo-anticipo/recibo-anticipo.component';
 import { FacturaComponent } from './encargadoFacturacion/factura/factura.component';
+import { AsigUnOpComponent } from './administrador/asig-un-op/asig-un-op.component';
+import { GasolinaComponent } from './administrador/gasolina/gasolina.component';
+import { ViaticosComponent } from './administrador/viaticos/viaticos.component';
+import { UnidadComponent } from './administrador/unidad/unidad.component';
+import { OperadorComponent } from './administrador/operador/operador.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +57,12 @@ import { FacturaComponent } from './encargadoFacturacion/factura/factura.compone
     CotizacionComponent,
     ContratoComponent,
     ReciboAnticipoComponent,
-    FacturaComponent
+    FacturaComponent,
+    AsigUnOpComponent,
+    GasolinaComponent,
+    ViaticosComponent,
+    UnidadComponent,
+    OperadorComponent
   ],
   imports: [
     BrowserModule,
