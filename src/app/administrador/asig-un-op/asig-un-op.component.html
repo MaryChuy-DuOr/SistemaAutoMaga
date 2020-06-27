@@ -1,0 +1,182 @@
+<app-nav-administrador></app-nav-administrador>
+    <div class="container mt-5" *ngIf="!this.bandera2">
+        <div class="row justify-content-md-center">
+            <div class="col-8">
+                <h3>Viajes</h3>
+                <label for="exampleInputEmail1">ID</label>
+                <div class="row">
+                    <div class="col">
+
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-success" (click)="mostrarTabla()">Buscar</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-success mx-2" (click)="registrar()">Registar viaje</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center" *ngIf="!this.bandera1">
+            <div class="col-8 mt-4">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col">ID</th>
+                            <th scope="col">Fecha Salida</th>
+                            <th scope="col">Fecha Regreso</th>
+                            <th scope="col">ID Unidad</th>
+                            <th scope="col">ID Operador</th>
+                            <th scope="col">Editar/Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123</td>
+                            <td>25/06/20</td>
+                            <td>27/06/20</td>
+                            <td>187641</td>
+                            <td>1865</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>124</td>
+                            <td>25/06/20</td>
+                            <td>30/06/20</td>
+                            <td>298562</td>
+                            <td>2896</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>125</td>
+                            <td>25/06/20</td>
+                            <td>30/06/20</td>
+                            <td>298562</td>
+                            <td>2896</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>126</td>
+                            <td>26/06/20</td>
+                            <td>27/06/20</td>
+                            <td>187641</td>
+                            <td>1865</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center" *ngIf="this.bandera1">
+            <div class="col-8 mt-4">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col">ID</th>
+                            <th scope="col">Fecha Salida</th>
+                            <th scope="col">Fecha Regreso</th>
+                            <th scope="col">ID Unidad</th>
+                            <th scope="col">ID Operador</th>
+                            <th scope="col">Editar/Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>126</td>
+                            <td>26/06/20</td>
+                            <td>27/06/20</td>
+                            <td>187641</td>
+                            <td>1865</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<div class="container mt-5" *ngIf="this.bandera2">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <h3>Asignar Unidades a Operadores</h3>
+            <div class="row">
+                <div class="col-2">
+                    <label for="exampleInputEmail1">ID Contrato</label>
+                    <input type="text" class="form-control" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Fecha Salida</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Fecha Regreso</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">ID Unidad</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">ID Operador</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="mt-2">
+                <button class="btn btn-success" (click)="registrar()">Registar Viaje</button>
+                <button class="btn btn-success mx-2" (click)="registrar()">Regresar</button>
+                <button class="btn btn-success mx-2" (click)="alert1()">Bloquear Unidad</button>
+                <button class="btn btn-success mx-2" (click)="alert2()">Notificar Operador</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container mt-5" *ngIf="this.bandera3">
+    <div class="alert alert-dismissible alert-success">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Bien hecho!</strong> La unidad ha sido bloqueada. 
+      </div>
+</div>
+
+<div class="container mt-5" *ngIf="this.bandera4">
+    <div class="alert alert-dismissible alert-success">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Bien hecho!</strong> Se ha enviado un correo al Operador. 
+      </div>
+</div>

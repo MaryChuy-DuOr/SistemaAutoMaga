@@ -1,0 +1,173 @@
+<app-nav-administrador></app-nav-administrador>
+    <div class="container mt-5" *ngIf="!this.bandera2">
+        <div class="row justify-content-md-center">
+            <div class="col-12">
+                <h3>Viáticos</h3>
+                <label for="exampleInputEmail1">ID</label>
+                <div class="row">
+                    <div class="col">
+
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-success" (click)="mostrarTabla()">Buscar</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-success mx-2" (click)="registrar()">Registar viático</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center" *ngIf="!this.bandera1">
+            <div class="col-12 mt-4">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col">ID</th>
+                            <th scope="col">ID Viaje</th>
+                            <th scope="col">ID Operdaor</th>
+                            <th scope="col">Numero Tarjeta</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Comprobantes</th>
+                            <th scope="col">Sobrante</th>
+                            <th>Editar/Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>123</td>
+                            <td>45684</td>
+                            <td>1234-5678-9101-1213</td>
+                            <td>1600</td>
+                            <td><img src="../../../assets/ticket.png" width="80"></td>
+                            <td>0</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>127</td>
+                            <td>78965</td>
+                            <td>1234-5678-9101-1213</td>
+                            <td>1800</td>
+                            <td><img src="../../../assets/ticket.png" width="80"></td>
+                            <td>300</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center" *ngIf="this.bandera1">
+            <div class="col-12 mt-4">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col">ID</th>
+                            <th scope="col">ID Viaje</th>
+                            <th scope="col">ID Operdaor</th>
+                            <th scope="col">Numero Tarjeta</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Comprobantes</th>
+                            <th scope="col">Sobrante</th>
+                            <th scope="col">Editar/Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2</td>
+                            <td>127</td>
+                            <td>78965</td>
+                            <td>1234-5678-9101-1213</td>
+                            <td>1800</td>
+                            <td><img src="../../../assets/ticket.png" width="80"></td>
+                            <td>300</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+<div class="container mt-5" *ngIf="this.bandera2">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <h3>Nuevo Viático</h3>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">ID</label>
+                    <input type="text" class="form-control" value="128" readonly>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">ID Viaje</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">ID Operador</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Numero tarjeta</label>
+                    <input type="datetime" class="form-control" placeholder="">
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Cantidad</label>
+                    <input type="datetime" class="form-control" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Comprobante</label>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">Upload</span>
+                        </div>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="inputGroupFile01">
+                          <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Sobrante</label>
+                    <input type="datetime" class="form-control" placeholder="">
+                </div>
+            </div>
+
+            <div class="mt-2">
+                <button class="btn btn-success" (click)="registrar()">Registar Víatico</button>
+                <button class="btn btn-success mx-2" (click)="registrar()">Regresar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
