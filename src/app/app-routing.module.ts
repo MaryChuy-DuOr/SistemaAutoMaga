@@ -20,6 +20,7 @@ import { GasolinaComponent } from './administrador/gasolina/gasolina.component';
 import { ViaticosComponent } from'./administrador/viaticos/viaticos.component';
 import { UnidadComponent } from './administrador/unidad/unidad.component';
 import { OperadorComponent } from './administrador/operador/operador.component';
+import { UnidadAccesoComponent } from './encargadoAcceso/unidad-acceso/unidad-acceso.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -42,6 +43,7 @@ const routes: Routes = [
   {path: 'asig-UnOp', component: AsigUnOpComponent},
   {path: 'gasolina', component: GasolinaComponent},
   {path: 'viaticos', component: ViaticosComponent},
+  {path: 'acceso', component: UnidadAccesoComponent},
   {path: '', pathMatch: 'full', redirectTo: 'login'},
   {path: '**', pathMatch: 'full', redirectTo: 'login'}
 ];

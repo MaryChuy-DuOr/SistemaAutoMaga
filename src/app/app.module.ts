@@ -32,6 +32,7 @@ import { GasolinaComponent } from './administrador/gasolina/gasolina.component';
 import { ViaticosComponent } from './administrador/viaticos/viaticos.component';
 import { UnidadComponent } from './administrador/unidad/unidad.component';
 import { OperadorComponent } from './administrador/operador/operador.component';
+import { UnidadAccesoComponent } from './encargadoAcceso/unidad-acceso/unidad-acceso.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { OperadorComponent } from './administrador/operador/operador.component';
     GasolinaComponent,
     ViaticosComponent,
     UnidadComponent,
-    OperadorComponent
+    OperadorComponent,
+    UnidadAccesoComponent
   ],
   imports: [
     BrowserModule,

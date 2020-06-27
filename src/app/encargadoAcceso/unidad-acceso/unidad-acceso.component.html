@@ -1,0 +1,253 @@
+<app-nav-encargado-acceso></app-nav-encargado-acceso>
+<div *ngIf="!this.bandera3">
+    <div class="container mt-5" *ngIf="!this.bandera2">
+        <div class="row justify-content-md-center">
+            <div class="col-8">
+                <h3>Unidades entrantes</h3>
+                <label for="exampleInputEmail1">Folio</label>
+                <div class="row">
+                    <div class="col">
+
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-success" (click)="mostrarTabla()">Buscar</button>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-success mx-2" (click)="registrar()">Registar datos unidad</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center" *ngIf="!this.bandera1">
+            <div class="col-12 mt-4">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col">Folio</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Id unidad</th>
+                            <th scope="col">Tipo Mant</th>
+                            <th scope="col">Id Preventivo</th>
+                            <th scope="col">Id Correctivo</th>
+                            <th scope="col">Kilometraje</th>
+                            <th scope="col">Fecha Entrega</th>
+                            <th scope="col">Obs Operador</th>
+                            <th scope="col">Obs Encargado</th>
+                            <th scope="col">Editar/Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123</td>
+                            <td>25/06/20</td>
+                            <td>1</td>
+                            <td>Preventivo</td>
+                            <td>1254</td>
+                            <td>-</td>
+                            <td>45687</td>
+                            <td>30/06/2020</td>
+                            <td>Todo funciona bien</td>
+                            <td>Mantenimiento preventivo de rutina</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>124</td>
+                            <td>26/06/20</td>
+                            <td>2</td>
+                            <td>Correctivo</td>
+                            <td>-</td>
+                            <td>4846</td>
+                            <td>45687</td>
+                            <td>30/06/2020</td>
+                            <td>Frenos no funcionan</td>
+                            <td>Cambio de frenos</td>
+                            
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>125</td>
+                            <td>28/06/20</td>
+                            <td>3</td>
+                            <td>Preventivo</td>
+                            <td>1258</td>
+                            <td>-</td>
+                            <td>45678</td>
+                            <td>30/06/2020</td>
+                            <td>Todo funciona bien</td>
+                            <td>Mantenimiento preventivo de rutina</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary" (click)="imprimir()"><i class="fas fa-print"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center" *ngIf="this.bandera1">
+            <div class="col-12 mt-4">
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="table-primary">
+                            <th scope="col">Folio</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Id unidad</th>
+                            <th scope="col">Tipo Mantenimiento</th>
+                            <th scope="col">Id Servicio Preventivo</th>
+                            <th scope="col">Id Servicio Correctivo</th>
+                            <th scope="col">Kilometraje</th>
+                            <th scope="col">Fecha Entrega</th>
+                            <th scope="col">Observacion Operador</th>
+                            <th scope="col">Observacion Encargado</th>
+                            <th scope="col">Editar/Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123</td>
+                            <td>25/06/20</td>
+                            <td>1</td>
+                            <td>Preventivo</td>
+                            <td>1254</td>
+                            <td>-</td>
+                            <td>45687</td>
+                            <td>30/06/2020</td>
+                            <td>Todo funciona bien</td>
+                            <td>Mantenimiento preventivo de rutina</td>
+                            <td>
+                                <div class="btn-group mr-2" role="group" aria-label="Second group">
+                                    <button type="button" class="btn btn-secondary"><i class="far fa-edit"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-trash-alt"></i></button>
+                                    <button type="button" class="btn btn-secondary"><i class="fas fa-print"></i></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5" *ngIf="this.bandera2">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <h3>Registro de unidad entrante</h3>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Folio</label>
+                    <input type="text" class="form-control" value="128" readonly>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Fecha</label>
+                    <input type="text" class="form-control" value="27/06/20" readonly>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Id Unidad</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Tipo Mantenimiento</label>
+                    <input type="datetime" class="form-control" placeholder="">
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Kilometraje</label>
+                    <input type="datetime" class="form-control" placeholder="">
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Fecha posible entrega</label>
+                    <input type="datetime" class="form-control" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Observacion operador</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Observacion encargado</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="mt-2">
+                <button class="btn btn-success" (click)="registrar()">Registar unidad</button>
+                <button class="btn btn-success mx-2" (click)="registrar()">Regresar</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container mt-5" *ngIf="this.bandera3">
+    <div class="row justify-content-md-center">
+        <div class="col-8">
+            <h3>Formato unidad entrante</h3>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Folio</label>
+                    <input type="text" class="form-control" value="128" readonly>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Fecha</label>
+                    <input type="text" class="form-control" value="27/06/20" readonly>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Id Unidad</label>
+                    <input type="text" class="form-control" value="458" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Tipo Mantenimiento</label>
+                    <input type="datetime" class="form-control" value="Preventivo" readonly>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Kilometraje</label>
+                    <input type="datetime" class="form-control" value="5846" readonly>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Fecha posible entrega</label>
+                    <input type="datetime" class="form-control" value="30/06/20" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="exampleInputEmail1">Observacion operador</label>
+                    <input type="datetime" class="form-control"  value="Todo funciona bien" readonly>
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1">Observacion encargado</label>
+                    <input type="datetime" class="form-control"  value="Revision de rutina" readonly>
+                </div>
+            </div>
+
+            <div class="mt-2">
+                <button class="btn btn-success">Imprimir Formato</button>
+                <button class="btn btn-success mx-2" (click)="imprimir()">Regresar</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
